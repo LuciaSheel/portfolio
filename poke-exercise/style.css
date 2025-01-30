@@ -1,0 +1,81 @@
+/* Container style */
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 24px;
+  color: #ff5a7b; /* Darker pink */
+  text-align: center;
+}
+
+#pokemonTableContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./images/openart-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+}
+
+/* Table style */
+table {
+  width: 50%;
+  border-collapse: collapse;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 16px;
+  background-color: #fdf1f5; /* Soft pink */
+  border: 3px solid #f08ca1; /* Light pink */
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Header row style */
+thead {
+  background-color: #ffd1e3; /* Light pink */
+}
+
+th {
+  padding: 12px;
+  color: #ff5a7b; /* Darker pink */
+  font-size: 18px;
+}
+
+/* Body row style */
+td {
+  padding: 10px;
+  text-align: center;
+  color: black;
+  border-bottom: 1px dashed #f08ca1;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+  background-color: #ffeaf1; /* Very soft pink */
+}
+
+/* Cute hover effect */
+tr:hover {
+  background-color: #ffccd9; /* Slightly darker pink */
+  transition: 0.3s;
+}
+
+/* Slightly rounded rows */
+tr {
+  border-radius: 8px;
+}
+
+/* Add emoji */
+td:first-child::before {
+  content: "✨ "; /* Add cute sparkle before Pokemon name */
+}
+
+/* Table caption style */
+table caption {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff5a7b;
+  margin-bottom: 15px;
+}

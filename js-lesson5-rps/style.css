@@ -1,0 +1,82 @@
+    body {
+      font-family: 'Orbitron', sans-serif; /* Apply the font */
+      display: flex;
+      justify-content: center; /* Center the game horizontally */
+      align-items: center; /* Center the game vertically */
+      height: 100vh; /* Full viewport height */
+      flex-direction: column; /* Stack elements vertically */
+      /* background-color: #f0f8ff; Light background color */
+      background: linear-gradient(135deg, #d0dbe6, #72bef0); /* Dark blue gradient */
+      position: relative;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: rgb(12, 12, 12);
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    #who-wins, #human-wins, #computer-wins {
+      font-weight: bold;
+      color: #ff4500; /* Orange for a pop of color */
+    }
+
+    /* Flexbox container for buttons and tally spans */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* Space between buttons */
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-family: Orbitron, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Button colors with hover effect */
+    #rock {
+      background-color: #ff6347; /* Rock: tomato color */
+    }
+
+    #rock:hover {
+      background-color: #ff4500; /* Darker hover */
+    }
+
+    #paper {
+      background-color: #4682b4; /* Paper: steel blue */
+    }
+
+    #paper:hover {
+      background-color: #4169e1; /* Darker hover */
+    }
+
+    #scissors {
+      background-color: #32cd32; /* Scissors: lime green */
+    }
+
+    #scissors:hover {
+      background-color: #228b22; /* Darker hover */
+    }
+

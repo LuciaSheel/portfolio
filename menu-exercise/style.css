@@ -1,0 +1,112 @@
+/*Gradient created using Josh Comeau CSS Gradient Generator*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 5px;
+}
+
+/*"Yummy" color scheme from SchemColor, created using Josh Comeau CSS Gradient Generator*/
+.gradient {
+  height: 100vh; /* Full viewport height */
+  background-image: linear-gradient(
+    180deg,
+    hsl(22deg 38% 38%) 0%, /* #3f000f Chocolate Brown */
+    hsl(27deg 32% 45%) 5%,
+    hsl(33, 30%, 52%) 10%,
+    hsl(38deg 35% 60%) 15%,
+    hsl(44deg 42% 68%) 21%,
+    hsl(49deg 52% 77%) 26%,
+    hsl(55deg 73% 86%) 32%,
+    #fff9cc 39%,
+    hsl(43, 100%, 87%) 46%,
+    hsl(33, 100%, 85%) 54%,
+    hsl(24, 100%, 83%) 64%,
+    #ffb199 75%,
+    hsl(8deg, 100%, 78%) 87%, /* #ff968f Tulip */
+    hsl(355, 100%, 75%) 100% 
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    }
+
+
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      color: #fffdd0; /* Cream*/
+      text-shadow: 2px 2px 0px #f4595b; /* Sunset Orange */
+      text-align: center;
+      font-size: 3rem;
+      opacity: 80%;
+      margin: 0 auto;
+    }
+
+    .h2 {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2rem;
+      opacity: 80%;
+      color: #fffdd0;
+      text-shadow: 1.5px 1.5px 0px #f4595b;
+      margin: 0 auto;
+      padding-bottom: 0px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 780px; /* To control the width of the content */
+      margin: 0 auto;
+      padding: 10px; /* Reduced padding for smaller screens */
+      }
+
+      .menu-item {
+        background-color: #fff9cc;
+        padding: 10px;
+        border: 1px solid #ffb199;
+        border-radius: 5px;
+      }
+
+
+    span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #ff808a;
+      text-shadow: 1px 1px 0px #84563c;
+    }
+
+    p {
+      font-family: 'Pacifico', cursive;
+      color: #84563c; /* Milk chocolate */
+      font-size: 14px;
+      letter-spacing: 2px;
+      margin-top: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    #footer-span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      opacity: 80%;
+      color: #fffdd0;
+      text-shadow: 1.5px 1.5px 0px #f4595b;
+    }
+
+    /* 600px and up */
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 5em;
+    }
+    .h2 {
+      font-size: 3em;
+    }
+  .menu-item p {
+    font-size: 1.2em;
+  }
+}

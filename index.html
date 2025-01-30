@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Normalize CSS for cross-browser consistency -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Main stylesheet for custom styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts: Anonymous Pro for h3 elements -->
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+
+   <!-- Google Fonts: Source Code Pro for h1, h2, nav, and button elements -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
+
+   <!-- Google Fonts: Fira Code for paragraph elements -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome: Social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Page title -->
+  <title>Lucia Sheel-Portfolio</title>
+</head>
+
+<body>
+  <div class="wrapper-container">
+    
+    <nav class="nav-container" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#bio" aria-label="Bio section">Bio</a></li>
+        <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+        <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="flex-container">
+      <h1> Lucia Sheel</h1>
+      <!-- Empty h2 for typewriter effect, populated by JavaScript -->
+      <h2 id="typewriter" class="typewriter"></h2>
+      <!-- Image of woman working at desk, created with OpenArt -->
+      <img src="images/desk.jpg" alt="Line drawing of woman with messy bun working at desk." class="round-img">
+    </section>
+
+    <section id="bio" class="flex-container">
+      <h2>Bio</h2>
+      <p>A bit about my background and education...I have 35 years experience in the service industry. My last day was March 16, 2020, when the world closed down due to the COVID-19 pandemic. I was invited back when things opened up, but I decided to retire and work on my education. I have since obtained a bookkeeping certificate and a virtual assistant certificate from Okanagan College. I was looking for my next educational challenge when I came across the Circuit Stream software development bootcamp. It seemed like a good fit, so I enrolled and I am currently learning many new and exciting things!</p>
+    </section>
+
+    <section id="projects" aria-label="Projects section">
+      <div class="flex-container">
+        <h2>Projects</h2>
+        <p>If you would like to check out my work please click the headings or hover over the images for a brief description of each exercise and the tools used. I am loosely calling these class exercises "projects." They are works in progress that will be updated as they evolve. Soon there will be some actual projects!</p>
+      </div>
+      
+      <div class="grid-container">
+        <div class="project-item">
+          <a href="chaka-site/index.html">
+            <h3>Musician Website</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/chaka.jpg" alt="Image of Chaka Khan website">
+            <p class="description">Webpage for my fave musician, made with HTML and CSS, and a video embed</p>
+          </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="project-item">
+          <a href="menu-exercise/index.html">
+            <h3>Yummy Menu</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/yummy.jpg" alt="Image of Yummy restaurant menu">
+            <p class="description">A simple restaurant menu with a yummy background gradient</p>
+          </div>
+        </div>
+
+        <!-- Hacktoberfest -->
+        <div class="project-item">
+          <a href="https://github.com/stars/LuciaSheel/lists/hacktoberfest-2024">
+            <h3>Hacktoberfest</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/holopin.jpg" alt="Image of Hacktoberfest badge">
+            <p class="description">My first ever hackathon contributions, via GitHub</p>
+          </div>
+        </div>
+
+        <!-- Rock Paper Scissors -->
+        <div class="project-item">
+          <a href="js-lesson5-rps/index.html">
+            <h3>RPS Game</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/rps-game.png" alt="Image of a rock-paper-scissors game">
+            <p class="description">Interactive game with HTML, CSS, and JavaScript</p>
+          </div>
+        </div>
+
+        <!-- Pokemon -->
+        <div class="project-item">
+          <a href="poke-exercise/index.html">
+            <h3>Pokemon GET</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/poke.png" alt="Image of Pokemon character">
+            <p class="description">JSON fetched, parsed, and displayed in a dynamic HTML table</p>
+          </div>
+        </div>
+
+        <!-- Static Weather -->
+        <div class="project-item">
+          <a href="pretty-weather/index.html">
+            <h3>Pretty Weather</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/pretty-weather.png" alt="Image of clouds and weather information">
+            <p class="description">Static weather page that doesn't do anything, but it's pretty</p>
+          </div>
+        </div>
+
+        <!-- Kelowna Weather -->
+        <div class="project-item">
+          <a href="current-weather/index.html">
+            <h3>Current Weather</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/kelowna-weather.png" alt="Image of weather forecast">
+            <p class="description">Page that actually gets weather! Uses OpenWeatherMap API and Postman</p>
+          </div>
+        </div>
+
+        <!-- Cat Votes -->
+        <div class="project-item">
+          <a href="cats/index.html">
+            <h3>Cat Votes</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/cat.png" alt="Image of cat">
+            <p class="description">Page that fetches cats and lets you vote 👍🏽 or 👎🏽</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="project-item">
+          <h3 id="contact">Contact Me</h3>
+          <form id="contactForm" aria-label="Contact form">
+            <!-- Name placeholder -->
+            <input type="text" id="name" name="name" required placeholder="Your Name" aria-label="Name">
+            <!-- Email placeholder -->
+            <input type="email" id="email" name="email" required placeholder="Your Email" aria-label="Email">
+            <!-- Message placeholder -->
+            <textarea id="message" name="message" required placeholder="Your Message" aria-label="Message"></textarea>
+            <button type="button" onclick="submitForm()" aria-label="Submit form">Submit</button>
+          </form>
+          <!-- Response message -->
+          <p id="responseMessage" style="display: none;"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back-to-top button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back-to-top button">↑</button>
+
+    
+    <!-- Font Awesome icons that link to my GitHub and LinkedIn profiles -->
+    <div class="social-icons-container">
+      <a href="https://github.com/LuciaSheel" target="_blank" class="icon github" aria-label="GitHub profile">
+        <i id="social-icon-g" class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/lucia-s-b068a92b0/" target="_blank" class="icon linkedin" aria-label="LinkedIn profile">
+        <i id="social-icon-l" class="fab fa-linkedin"></i>
+      </a>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Lucia Sheel ✨ All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

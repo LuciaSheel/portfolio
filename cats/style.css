@@ -1,0 +1,54 @@
+ main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1280px;
+ }
+
+ #fetchCatButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer; /* Find out how to make it a cat paw! */
+  background-color: #f7d5da;
+  transition: background-color 0.3s;
+  border: none;
+  border-radius: 5px;
+ }
+
+ #fetchCatButton:hover {
+  background-color: #f5c3cb;
+}
+ /* Make all fetched images same size */
+ #imagePlaceholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border: 2px solid #e013be; /* replace with background image? */
+  border-radius: 15px;;
+}
+
+ #imagePlaceholder img {
+  width: 300px;
+  height: 300px;
+  border: none;
+  object-fit: cover;
+}
+
+#voteButtons, #loading {
+  display: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#voteFor, #voteAgainst {
+  padding: 5px 10px;
+  background-color: #f7d5da;
+  border: none;
+  border-radius: 5px;
+}
+

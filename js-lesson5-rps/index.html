@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors Game</title>
+
+  <!-- Link to computery font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+   <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors Game</h1>
+    <h2>Computer Choice: <span id="computer-choice"></span></h2>
+    <h2>Human Choice: <span id="human-choice"></span></h2>
+    <h2>Winner: <span id="who-wins"></span></h2>
+
+    <!-- Flexbox container for buttons -->
+    <div class="button-container">
+      <button id="rock">🪨 </button>
+      <button id="paper">📄 </button>
+      <button id="scissors">✂️ </button>
+    </div>
+
+    <!-- Flexbox container for tally spans -->
+   <div class="button-container">
+    <h2>Human Wins: <span id="human-wins">0</span></h2>
+    <h2>Computer Wins: <span id="computer-wins">0</span></h2>
+   </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
