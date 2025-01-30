@@ -1,8 +1,14 @@
+require('dotenv').config(); // Load environment variables
+
+const apiKey = process.env.OPENWEATHER_API_KEY;
+
+console.log("Your API Key:", apiKey); // Just to confirm it loads (remove later)
+
+
 document.getElementById("weatherForm").addEventListener("submit", async (event) => {
   event.preventDefault(); // Prevent the form from reloading the page
   
   const city = document.getElementById("city").value;
-  const apiKey = "421b3628383ae27423a4f06ef912b946";
 
   // Construct the URL for fetching current weather data
   const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
