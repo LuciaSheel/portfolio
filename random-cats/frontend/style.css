@@ -39,16 +39,3 @@
   object-fit: cover;
 }
 
-#voteButtons, #loading {
-  display: none;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#voteFor, #voteAgainst {
-  padding: 5px 10px;
-  background-color: #f7d5da;
-  border: none;
-  border-radius: 5px;
-}
-
