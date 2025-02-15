@@ -6,12 +6,18 @@ let loadingImage = document.getElementById("loading");
 // Add event listener to fetch a new image with button click
 getCatImageBtn.addEventListener("click", fetchCatData);
 
+// Determine backend URL based on environment
+const backendURL =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3001"
+    : "https://portfolio-website-two-production.up.railway.app";
+
 // Function to fetch random image from your backend
 async function fetchCatData() {
   loadingImage.style.display = "block";
 
   try {
-    let response = await fetch("http://localhost:3001/cat-data"); // Call backend
+    let response = await fetch(`${backendURL}/cat-data`); // Dynamic backend URL
     let data = await response.json();
 
     if (!data || !data[0]) throw new Error("No cats found!");
@@ -27,3 +33,4 @@ async function fetchCatData() {
     loadingImage.style.display = "none";
   }
 }
+
