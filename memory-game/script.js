@@ -1,4 +1,4 @@
-const emoji = ['🍎', '🥦', '🍿', '🍱', '🍪', '🧋', '☕', '🌮'];
+const emoji = ['🍎', '🥦', '🍿', '🍱', '🍪', '🍹', '☕', '🌮'];
 let shuffledEmoji = [...emoji, ...emoji]; // Duplicate emoji to make pairs
 shuffledEmoji = shuffle(shuffledEmoji); // Shuffle array
 const gameContainer = document.getElementById('grid'); // Target grid for styling
