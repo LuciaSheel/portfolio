@@ -33,4 +33,3 @@ async function fetchCatData() {
     loadingImage.style.display = "none";
   }
 }
-
