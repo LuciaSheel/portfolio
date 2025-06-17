@@ -164,8 +164,8 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 100%; /* Full width of the container */
-  max-width: 300px; /* Limit the width of the form */
-  gap: 10px;
+  max-width: 500px; /* Limit the width of the form */
+  gap: 15px;
 }
 
 #contactForm input,
@@ -180,16 +180,17 @@ h3 {
 #contactForm button {
   padding: 10px 20px;
   margin: 0 0 10px 0;
+  width: 100%;
   border: none;
   font-family: 'Source Code Pro', monospace;
-  background-color: #00ff00;
+  background-color:  #7dc2ec;
   color: black;
   cursor: pointer;
   border-radius: 5px;
 }
 
 #contactForm button:hover {
-  background-color: #00ff00da;
+  background-color: #5eb3e3;
 }
 
 /* Paragraphs */
