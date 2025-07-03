@@ -129,9 +129,33 @@ h3 {
   position: relative;
 }
 
+.tooltip {
+  color: #7dc2ec;
+  position: relative;
+  cursor: help;
+  text-decoration: none;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 /* Project item descriptions on hover */
 /* Position the project-item images */
-
 
 /* Style the description */
 .image-container .description {
