@@ -35,6 +35,28 @@ backToTopBtn.addEventListener("click", function () {
     });
 });
 
+// Hamburger menu functionality
+const hamburger = document.getElementById("hamburger");
+const navList = document.getElementById("nav-list");
+
+hamburger.addEventListener("click", function () {
+    navList.classList.toggle("active");
+});
+
+// Close menu when clicking on a nav link
+navList.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") {
+        navList.classList.remove("active");
+    }
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", function (e) {
+    if (!hamburger.contains(e.target) && !navList.contains(e.target)) {
+        navList.classList.remove("active");
+    }
+});
+
 // Function to handle form submission
 function submitForm() {
     // Get form elements

@@ -30,7 +30,12 @@
   <div class="wrapper-container">
     
     <nav class="nav-container" aria-label="Main navigation">
-      <ul class="nav-list">
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list" id="nav-list">
         <li><a href="#bio" aria-label="Bio section">Bio</a></li>
         <li><a href="#projects" aria-label="Projects section">Projects</a></li>
         <li><a href="assets/luciasheel-resume.pdf" target="_blank">Resume</a></li>
@@ -48,14 +53,14 @@
 
     <section id="bio" class="flex-container">
       <h2>Bio</h2>
-      <p>After 35 years in the service industry, I made a pivotal career transition in 2020. Rather than returning to a previous role post-pandemic, I chose to pursue my passion for continuous learning and technology. I've since earned certificates in bookkeeping and virtual assistance from Okanagan College, and have completed the Circuit Stream software development bootcamp where I built skills in the <span class="tooltip">MERN stack<span class="tooltiptext">MongoDB, Express.js, React, Node.js</span></span>.
-      My diverse background in service and business operations, combined with dedication to mastering new technical skills, gives me a unique perspective on creating user-focused solutions.</p>
+      <p>After 35 years in the service industry, I chose to pursue my passion for learning. Since 2020 I have earned certificates in bookkeeping, virtual assistance, and software development specializing in the <span class="tooltip">MERN stack<span class="tooltiptext">MongoDB, Express.js, React, Node.js</span></span>.
+      My diverse background in service and operations, combined with dedication to mastering technical skills, gives me a unique perspective on user-focused solutions.</p>
     </section>
 
     <section id="projects" aria-label="Projects section">
       <div class="flex-container">
         <h2>Projects & Milestones</h2>
-        <p>Here are projects I've built during my development journey, plus some milestones and contributions along the way. Click the headings to see them live or hover for quick descriptions!</p> 
+        <p>Here are projects I have built during my development journey, plus some milestones and contributions along the way. Click the headings to see them live or hover for quick descriptions!</p> 
       </div>
       
       <div class="grid-container">
@@ -82,7 +87,7 @@
           </div>
         </div>
 
-        <!-- Certificate -->
+        <!-- makeitMVP Certificate -->
         <div class="project-item">
           <a href="assets/internship-certificate.pdf" target="_blank">
             <h3>Launch Academy</h3>
@@ -114,15 +119,6 @@
             <p class="description">Certificate of Completion for Software Development Bootcamp</p>
           </div>
         </div>
-
-        <!-- Pokemon -->
-        <!-- <div class="project-item">
-            <h3>Pokemon Placeholder</h3>
-          <div class="image-container">
-            <img src="images/poke.png" alt="Image of Pokemon characters">
-            <p class="description">Completely useless delightful placeholder</p>
-          </div>
-        </div> -->
         
         <!-- Menu -->
         <div class="project-item">
@@ -132,29 +128,6 @@
           <div class="image-container">
             <img src="images/yummy.jpg" alt="Image of Yummy restaurant menu">
             <p class="description">A simple restaurant menu with a yummy background gradient</p>
-          </div>
-        </div>
-
-        <!-- Rock Paper Scissors -->
-        <div class="project-item">
-          <a href="https://luciasheel.github.io/portfolio-website-two/rps-game/index.html" target="_blank">
-            <h3>RPS Game</h3>
-          </a>
-          <div class="image-container">
-            <img src="images/rps-game.png" alt="Image of a rock-paper-scissors game">
-            <p class="description">Interactive game with HTML, CSS, and JavaScript</p>
-          </div>
-        </div>
-
-        <!-- Memory Game -->
-        <div class="project-item">
-          <a href="https://luciasheel.github.io/memory-game/" target="_blank"></a>
-          <a href="memory-game/index.html" target="_blank">
-            <h3>Memory Game</h3>
-          </a>
-          <div class="image-container">
-            <img src="images/memory.png" alt="Image of memory card-flipping game">
-            <p class="description">Simple game to find matching emoji pairs</p>
           </div>
         </div>
 
@@ -168,6 +141,27 @@
             <p class="description">Page that fetches cats!</p>
           </div>
         </div> 
+
+        <!-- Memory Game -->
+        <div class="project-item">
+          <a href="https://luciasheel.github.io/memory-game/" target="_blank"></a>
+          <a href="memory-game/index.html" target="_blank">
+            <h3>Memory Game</h3>
+          </a>
+          <div class="image-container">
+            <img src="images/memory.png" alt="Image of memory card-flipping game">
+            <p class="description">Simple game to find matching emoji pairs</p>
+          </div>
+        </div>
+
+        <!-- Pokemon Placeholder-->
+        <div class="project-item">
+            <h3>Pokemon Placeholder</h3>
+          <div class="image-container">
+            <img src="images/poke.png" alt="Image of Pokemon characters">
+            <p class="description">Completely useless delightful placeholder</p>
+          </div>
+        </div>
       </div>
     </section>
 

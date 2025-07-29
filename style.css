@@ -13,6 +13,25 @@
   margin-top: 40px;
 }
 
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #7dc2ec;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
 /* Unordered list for nav items */
 .nav-list {
   display: flex;
@@ -38,6 +57,35 @@
   transition: 0.1s ease; /* Smooth hover transition */
   color: #7dc2ec;
   text-shadow: 0.5px 0.5px 0.5px black;
+}
+
+/* Nav Mobile Styles */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  
+  .nav-list {
+    display: none;
+  }
+  
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    transform: none;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
 }
 
 /* Main heading */
